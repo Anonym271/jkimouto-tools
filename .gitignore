@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+# images & archives
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.plt
+*.anm
+*.dat
+*.arc
