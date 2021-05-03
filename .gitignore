@@ -40,3 +40,7 @@
 *.anm
 *.dat
 *.arc
+
+# vs
+.vscode/
+.vs/
