@@ -223,7 +223,7 @@ int main(int argc, const char** argv)
     fin.read((char*)image.data(), image.size());
 
     decrypt(image);
-    save_image(outpath.string() + "00_.png", image, base.w, base.h, base.c);
+    save_image(outpath.string() + "00.png", image, base.w, base.h, base.c);
     last = std::move(image);
 
     for (uint32_t i = 1; i < hdr.file_count; i++)
@@ -244,7 +244,7 @@ int main(int argc, const char** argv)
         std::string fn = outpath.string();
         if (i < 10)
             fn += '0';
-        fn += std::to_string(i) + "_.png";
+        fn += std::to_string(i) + ".png";
         save_image(fn, image, base.w, base.h, base.c);
         
         last = std::move(image);
