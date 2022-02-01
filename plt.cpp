@@ -162,10 +162,10 @@ std::vector<uint8_t> flip4(const std::vector<uint8_t>& data, int w, int h)
         out = buf.data() + row * stride;
         for (int p = 0; p < w; p++)
         {
-            out[0] = in[3];
-            out[1] = in[2];
-            out[2] = in[1];
-            out[3] = in[0];
+            out[0] = in[2];
+            out[1] = in[1];
+            out[2] = in[0];
+            out[3] = in[3];
             out += 4;
             in += 4;
         }
